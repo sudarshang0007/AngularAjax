@@ -1,4 +1,4 @@
-<div class="grid-container">
+<!-- <div class="grid-container">
   <h1 class="mat-h1">Gallery</h1>
 </div>
 
@@ -6,13 +6,76 @@
   <div class="row">
     <div class="col-lg-3" *ngFor="let image of images; let i=index;">
       <div class="grid" style="margin-bottom: 15px;">
-        <img src="{{image.source}}" class="img img-responsive" alt="..." style="width:100%" data-toggle="modal" data-target="#exampleModalCenter"
+        <img src="{{image.src}}" class="img img-responsive" alt="..." style="width:100%" data-toggle="modal" data-target="#exampleModalCenter"
           (click)="setCurrentImage(image);">
       </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      Gallery
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3" *ngFor='let image of images; let i=index'>
+                <div class="grid" style="text-align:center">
+                  <img [src]="image.src" alt='' (click)="displayImage(i)" data-toggle="modal" data-target="#exampleModal" style="width: 100%;"
+                    (load)="removeSpinner('img'+i)">
+                  <div id="img{{i}}" class="image-overlay">
+                    <img class="spinner" src="https://loading.io/spinners/vortex/lg.vortex-spiral-spinner.gif" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
     </div>
   </div>
 </div>
 
 
+
+
+
+
+
+
 <!-- Button trigger modal -->
-  <app-gallery-viewer [header]="" [images]="imageReady"></app-gallery-viewer>
+<!-- <app-gallery-viewer></app-gallery-viewer> -->
+
+
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="prevImage" (click)="prevImage()">
+          <button class="navBtnLeft">left</button>
+        </div>
+        <div>
+          <img src="{{selectedImage?.src}}" alt="" class="popupImage" (load)="imageLoad()">
+        </div>
+        <div class="nextImage" (click)="nextImage()">
+          <button class="navBtnRight">Right</button>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
