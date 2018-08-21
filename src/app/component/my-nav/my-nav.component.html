@@ -1,30 +1,26 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="over" [opened]="false">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item *ngFor="let menu of menuList" [routerLink]="menu.link ? menu.link : '' " (click)="menu.subMenu ? drawer.open() :drawer.toggle()">{{menu.name}}
-        <div *ngIf="menu.subMenu">
-          
-           <button mat-button [matMenuTriggerFor]="menux">
-              <mat-icon >play_arrow</mat-icon>
-          </button> 
-          <mat-menu #menux="matMenu">
-            <a mat-menu-item *ngFor="let submenu of menu.subMenu" [routerLink]="submenu.link" (click)="drawer.toggle()">{{submenu.name}}</a>
-          </mat-menu>
-        </div>
-      </a>
-    </mat-nav-list>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" routerLink="#">{{applicationName}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li *ngFor="let menu of menuList" class="nav-item {{menu.subMenu ? 'dropdown' : ''}}"  data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive">
+          <a *ngIf="!menu.subMenu" class="nav-link" [routerLink]="menu.link">{{menu.name}}</a>
+          <a *ngIf="menu.subMenu" class="nav-link dropdown-toggle" data-toggle="dropdown" [routerLink]="menu.link" role="button" aria-haspopup="true"
+            aria-expanded="false">{{menu.name}}</a>
+          <div class="dropdown-menu">
+            <ul class="nav">
+              <li class="dropdown-item" *ngFor="let enu of menu.subMenu">
+                <a class="dropdown-item" [routerLink]="enu.link">{{enu.name}}</a>
+              </li>
+            </ul>
+          </div>
+        </li>
 
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <!-- *ngIf="isHandset$ | async" -->
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>{{applicationName}}</span>
-    </mat-toolbar>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
+      </ul>
+    </div>
+  </div>
+</nav>
