@@ -10,7 +10,7 @@ export const menuItems = [
             { name: 'Committee', link: '/committee' }]
     },
     /*     { name: 'Academic', icon: '', link: '/academic' }, */
-    { name: 'Admission', icon: '', link: '/student' },
+    { name: 'Admission', icon: '', link: '/admission' },
     { name: 'Training & Placement', icon: '', link: '/TnPcell' },
     {
         name: 'Activities', icon: '', link: '',
