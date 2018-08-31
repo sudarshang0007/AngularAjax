@@ -1,20 +1,66 @@
 <div class="container">
-<div class="row">
 
-  <div class="col-sm-4 profile" *ngFor="let faculty of facultyDetails ">
-    <p-card styleClass="ui-card-shadow">
-      <p-header>
-        <img src="Card" src="assets/showcase/images/usercard.png">
-      </p-header>
-
-      <h5 class="mb-0">{{faculty.name}}</h5>
-      <p class="card-subtitle mb-2 text-muted">Designation: {{faculty.designation}}</p>
-      <p class="card-subtitle mb-2 text-muted">Qualification: {{faculty.Qualification}}</p>
-      <p class="card-subtitle mb-2 text-muted">Specialization: {{faculty.specialization}}</p>
-      <p class="card-subtitle mb-2 text-muted">Experience: {{faculty.experience}}</p>
-      <p class=" mat-menu-item">Email:
-        <a href="mailTo://{{faculty.email}}" >{{faculty.email}}</a>
-      </p>
-    </p-card>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Faculty Details</h5>
+      <hr>
+      <br>
+      <div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Qualification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mr.Kothalikar Rajendra R.</td>
+              <td>Principal</td>
+              <td>M.Pharm</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mr.Devadkar Nanasaheb B.</td>
+              <td>Lecturer</td>
+              <td>M.Pharm</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mr.Bodake Pradeep L.</td>
+              <td>Lecturer</td>
+              <td>M.Pharm</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mr.Jagtap Jeevan M.</td>
+              <td>Lecturer</td>
+              <td>B.Pharm</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mr.Raje-Ghadage Swapnil H.</td>
+              <td>Lecturer</td>
+              <td>M.Pharm</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Mr.Hagavane Vishal B.</td>
+              <td>Lecturer</td>
+              <td>B.Pharm</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Miss. Tate-Deshmukh Pranali A.</td>
+              <td>Lecturer</td>
+              <td>B.Pharm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
-</div></div>
+</div>

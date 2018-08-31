@@ -1,66 +1,97 @@
-<h3>
-  <em class="fa fa-phone"> Contact us</em>
-</h3>
-
-<!-- <script>
-   App.controller('GMapController', function($scope, $timeout){
-     $scope.mapLoading = true;
-     $timeout(function(){
-       $scope.mapAddress = "Shikshan Prasarak Mandal’s College of Pharmacy";
-       $scope.mapLoading = false;
-     }, 2000);
-   });
-</script> -->
 <div class="container">
-  <div class="row">
-    <div class="col-lg-6 portfolio-item">
-      <div class="card h-100">
 
-        <div class="card-body">
-          <h4 class="card-title">
-            <a>Address</a>
-          </h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.1850740970895!2d75.02559821440798!3d17.87679759321151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc4745715555555%3A0x1f3bb9b1b1b72ecb!2sShikshan+Prasarak+Mandal%E2%80%99s+College+of+Pharmacy!5e0!3m2!1sen!2sin!4v1472680781658"
-            width="100%" height="auto" frameborder="0" style="border:0;min-height:300px" allowfullscreen></iframe>
-          <div class="card-text">
-            <address>
-              College of Pharmacy, Akluj
-              <br/> Sangola Road, Malewadi-Akluj Tal. Malshiras Dist. Solapur
-            </address>
-            <address>
-              <em class="fa fa-phone text-danger"></em>
-              <b>Ph. No: </b> (02185) 224243
-              <em class="icon-envelope text-danger"></em>
-              <b> Email: </b> copakluj@gmail.com
-            </address>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Contact Us</h5>
+      <hr>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- START card-->
+          <div class="card">
+            <div class="card-header">
+              Reach Us
+            </div>
+            <div class="card-body">
+
+              <div >
+                <table class="table table-sm">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>Address</label>
+                      </td>
+                      <td>College of Pharmacy (poly.), Akluj
+                        <br> Tal: Malshiras, Dist: Solapur,
+                        <br> Pin: 413 101.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>
+                          <em class="fa fa-phone"></em> Contact No</label>
+                      </td>
+                      <td>02185 223 402</td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>
+                          <em class="fa fa-email"></em> Email</label>
+                      </td>
+                      <td>
+                        <a href="mailTo:0252office@msbte.com">
+                          0252office@msbte.com </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="card reponsive">
+                <!-- Google map Begin -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.1850740970895!2d75.02559821440798!3d17.87679759321151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc4745715555555%3A0x1f3bb9b1b1b72ecb!2sShikshan+Prasarak+Mandal%E2%80%99s+College+of+Pharmacy!5e0!3m2!1sen!2sin!4v1472680781658"
+                  width="100%" height="auto" frameborder="0" style="border:0;min-height:210px" allowfullscreen=""></iframe>
+              </div>
+              <!-- Google Map End -->
+            </div>
           </div>
+          <!-- END card-->
         </div>
-      </div>
-    </div>
-    <div class="col-lg-6 portfolio-item">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title">
-            <a >Send us Message</a>
-          </h4>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Phone">
-          </div>
-          <div class="form-group">
-            <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-          </div>
-          <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-md" value="Send Message">
-          </div>
 
 
+        <div class="col-lg-6">
+          <!-- START card-->
+          <div class="card ">
+            <div class="card-header ">
+              Ask Us
+            </div>
+            <div class="card-body">
+              <label>Name </label>
+              <input name="name" required="required" class="form-control parsley-success" type="text">
+
+              <label>Contact No.
+              </label>
+              <input name="contactNo" required="required" class="form-control parsley-success" type="number">
+
+              <label>Email
+              </label>
+              <input name="name" required="required" class="form-control parsley-success" type="email">
+
+              <label>What you want to know</label>
+              <textarea name="name" required="required" class="form-control parsley-success"></textarea>
+
+              <div class="pull-right" style="margin-top: 25px">
+                <button type="submit" class="btn btn-primary">Ask Question ?
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <!-- END card-->
         </div>
+
       </div>
     </div>
   </div>

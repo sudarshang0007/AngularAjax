@@ -13,6 +13,9 @@ export class MyNavComponent {
   readonly applicationName = applicationName;
   constructor() {
     this.menuList = menuItems;
+
+    var anchorList = document.getElementsByClassName('menu-link');
+    console.log(anchorList);
   }
 
 
