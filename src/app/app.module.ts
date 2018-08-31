@@ -26,6 +26,7 @@ import { GalleryViewerComponent } from './component/GalleryPopup/gallery-viewer/
 import { MatTabsModule } from '@angular/material/tabs';
 import { StudentDetailsComponent } from './component/mainContent/student/student-details/student-details.component';
 import { HeaderFlagComponent } from './component/header-flag/header-flag.component';
+import { UnderConstructionComponent } from './component/additional/under-construction/under-construction.component';
 
 
 
@@ -48,7 +49,8 @@ import { HeaderFlagComponent } from './component/header-flag/header-flag.compone
     ContactComponent,
     GalleryViewerComponent,
     StudentDetailsComponent,
-    HeaderFlagComponent
+    HeaderFlagComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
