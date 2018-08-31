@@ -8,20 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   images: any[];
   title = 'app';
+  year: string;
 
   constructor() {
     this.images = [];
-    this.images.push({
-      source: 'https://primefaces.org/primeng/assets/showcase/images/logo.png',
-      alt: 'Description for Image 1', title: 'Title 1'
-    });
-    this.images.push({
-      source: 'https://primefaces.org/primeng/assets/showcase/images/logo.png',
-      alt: 'Description for Image 2', title: 'Title 2'
-    });
-    this.images.push({
-      source: 'https://primefaces.org/primeng/assets/showcase/images/logo.png',
-      alt: 'Description for Image 3', title: 'Title 3'
-    });
+    this.year = new Date().getFullYear().toString();
   }
-}

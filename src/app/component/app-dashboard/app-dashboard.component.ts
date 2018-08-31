@@ -6,8 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-dashboard.component.css']
 })
 export class AppDashboardComponent {
-  cards = [
-    { title: 'Card 1', cols: 2, rows: 1 },
-    { title: 'Card 2', cols: 1, rows: 1 }
-  ];
+  Totaldate = { day: '', date: '', month: '', year: '', time:'' }
+
+  constructor(){
+ /*    const newDate =new Date();
+
+    this.Totaldate.time =newDate.toLocaleTimeString().toString();
+    console.log(newDate.toLocaleTimeString());
+    console.log(newDate.toLocaleDateString());
+ */
+
+    
+  }
 }
