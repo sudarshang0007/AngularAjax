@@ -14,3 +14,4 @@ export class AppComponent {
     this.images = [];
     this.year = new Date().getFullYear().toString();
   }
+}
