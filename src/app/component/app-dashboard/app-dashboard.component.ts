@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { importantLinks } from '../../constant/implinks.constant';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,14 +9,8 @@ import { Component } from '@angular/core';
 export class AppDashboardComponent {
   Totaldate = { day: '', date: '', month: '', year: '', time:'' }
 
+  readonly importantLinks ;
   constructor(){
- /*    const newDate =new Date();
-
-    this.Totaldate.time =newDate.toLocaleTimeString().toString();
-    console.log(newDate.toLocaleTimeString());
-    console.log(newDate.toLocaleDateString());
- */
-
-    
+    this.importantLinks=importantLinks;
   }
 }

@@ -14,6 +14,7 @@ import { GalleryComponent } from './component/mainContent/gallery/gallery.compon
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
+import { GrievanceComponent } from './component/mainContent/grievance/grievance.component';
 
 const routes: Routes = [
   { path: '', component: AppDashboardComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'principal', component: PrincipalComponent },
   { path: 'faculty', component: FacultyComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'grievance', component: GrievanceComponent },
 ];
 
 @NgModule({

@@ -14,7 +14,7 @@
       <img class="img-fluid rounded" src="./assets/img/college/banner.jpg" alt="">
       <hr>
       <!-- Post Content -->
-      <p class="lead">" To be a leader in pharmaceutical sciences & pharmacy practice education, training, research and continuous professional
+      <!--  <p class="lead">" To be a leader in pharmaceutical sciences & pharmacy practice education, training, research and continuous professional
         development for pharmacists and Pharmaceutical Scientists providing competent patient care and nurturing drug discovery
         and development "</p>
 
@@ -28,10 +28,31 @@
       <p>
         To develop and advance the knowledge, attitude and skills of pharmacists and faculty members who can provide comprehensive
         pharmaceutical care to patients, improve patient outcomes, and meet societal needs for safe and effective drug therapy
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum
-        obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-      <hr>
+      </p> -->
+
+      <div class="card">
+        <div class="card-header">
+          <h5>Vision</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            To become one of the leading institute of higher education with a view of global competencies among the students by use of
+            technologies, disciplines, resources and even attitudes and finally contributing to national developement.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-header">
+          <h5>Mission</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            To impart higher quality Pharmaceutical education and practice to the wards of farmers, workers, labourers and rural area
+            and to meet healthcare needs of community in Maharashtra.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Sidebar Widgets Column -->
@@ -44,23 +65,8 @@
           <div class="row">
             <div class="col-lg-12">
               <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <a href="#">HTML</a>
-                </li>
-                <li>
-                  <a href="#">Freebies</a>
-                </li>
-                <li>
-                  <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <a href="#">HTML</a>
-                </li>
-                <li>
-                  <a href="#">Freebies</a>
+                <li *ngFor="let link of importantLinks">
+                  <a href="{{link.filename? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
                 </li>
               </ul>
             </div>
@@ -70,9 +76,11 @@
 
       <!-- Side Widget -->
       <div class="card my-4">
-        <h5 class="card-header">Side Widget</h5>
-        <div class="card-body">
-          You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+        <h5 class="card-header">Motto</h5>
+        <div class="card-body text-center">
+          <strong>"Tewo Sada Dnyanamaya pradeep"</strong>
+          <br>
+          <small class="text-muted">Let the life save forever</small>
         </div>
       </div>
 
