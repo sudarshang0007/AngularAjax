@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { importantLinks } from '../../constant/implinks.constant';
+import { importantLinks, academicLinks } from '../../constant/implinks.constant';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,10 +7,11 @@ import { importantLinks } from '../../constant/implinks.constant';
   styleUrls: ['./app-dashboard.component.css']
 })
 export class AppDashboardComponent {
-  Totaldate = { day: '', date: '', month: '', year: '', time:'' }
+  Totaldate = { day: '', date: '', month: '', year: '', time: '' }
 
-  readonly importantLinks ;
-  constructor(){
-    this.importantLinks=importantLinks;
+  readonly importantLinks;
+  readonly academicLinks = academicLinks;
+  constructor() {
+    this.importantLinks = importantLinks;
   }
 }

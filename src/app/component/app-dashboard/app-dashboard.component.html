@@ -1,15 +1,18 @@
 <!-- Page Content -->
 <div class="container">
   <div class="row">
+<!--     <div class="col-lg-12">
+
+            <p class="">
+                Shikshan prasarak Mandal's
+              </p>
+              <h1 class="" style="margin-top:-20px;">College of Pharmacy (poly), Akluj</h1>
+    </div> -->
     <!-- Post Content Column -->
     <div class="col-lg-8" style="flex: 1 1 auto; padding: 1.25rem;">
-      <!-- Title -->
-      <p class="">
-        Shikshan prasarak Mandal's
-      </p>
-      <h1 class="" style="margin-top:-20px;">College of Pharmacy (poly), Akluj</h1>
+
       <!-- Author -->
-      <hr>
+<!--       <hr> -->
       <!-- Preview Image -->
       <img class="img-fluid rounded" src="./assets/img/college/banner.jpg" alt="">
       <hr>
@@ -58,31 +61,47 @@
     <!-- Sidebar Widgets Column -->
     <div class="col-md-4">
 
-      <!-- Categories Widget -->
-      <div class="card my-4">
-        <h5 class="card-header">Important links</h5>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="list-unstyled mb-0">
-                <li *ngFor="let link of importantLinks">
-                  <a href="{{link.filename? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <!-- Side Widget -->
       <div class="card my-4">
         <h5 class="card-header">Motto</h5>
         <div class="card-body text-center">
-          <strong>"Tewo Sada Dnyanamaya pradeep"</strong>
-          <br>
+            <img alt="Founder" src="./assets/img/college/logo.png" class="img-responsive" style="max-height:134px;margin: 0 auto;border-radius: 0px 10px;border: 2px solid;box-shadow: 10px">
+          <p> <strong>"Tewo Sada Dnyanamaya pradeep"</strong></p>
           <small class="text-muted">Let the life save forever</small>
         </div>
       </div>
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Important links</h5>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <ul class="list-unstyled mb-0">
+                        <li *ngFor="let link of importantLinks">
+                          <a href="{{link.filename? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-4">
+                  <h5 class="card-header">Academic</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ul class="list-unstyled mb-0">
+                          <li *ngFor="let link of academicLinks">
+                            <a href="{{link.filename? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
     </div>
 
