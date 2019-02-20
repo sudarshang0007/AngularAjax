@@ -1,3 +1,16 @@
-<div class="grid-container">
-    <app-under-construction></app-under-construction>
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Academic</h5> <hr>
+      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+      <br>
+      <ul class="list-group ">
+          <li class="list-group-item" *ngFor="let link of academicLinks">
+            <a href="{{link.filename}}" target="_blank">{{link.displayText}}</a>
+          </li>
+        </ul>
+    </div>
   </div>
+
+
+</div>

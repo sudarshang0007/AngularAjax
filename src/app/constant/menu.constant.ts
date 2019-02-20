@@ -17,6 +17,7 @@ export const menuItems = [
             { name: 'Student Corner', link: '/student' },
             { name: 'Gallery', icon: '', link: '/gallery' },
             { name: 'Alumni', icon: '', link: '/alumni' },
+            { name: 'Grievance Portal', icon: '', link: '/grievance' },
         ]
     },
     { name: 'Contact us', icon: '', link: '/contact' }];
