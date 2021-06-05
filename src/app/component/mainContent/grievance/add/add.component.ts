@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { HttpClient, HttpHeaders } from '../../../../../../node_modules/@angular/common/http';
-import { Form, NgForm } from '../../../../../../node_modules/@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Form, NgForm } from '@angular/forms';
 import { ROOT_URL } from '../../../../constant/app.constant';
 
 @Component({

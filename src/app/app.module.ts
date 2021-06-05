@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { GalleriaModule } from 'primeng/galleria';
+/* import { ButtonModule } from 'primeng/button';
+import { GalleriaModule } from 'primeng/galleria'; */
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
@@ -21,7 +21,7 @@ import { AdmissionComponent } from './component/mainContent/admission/admission.
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
-import { CardModule } from 'primeng/card';
+/* import { CardModule } from 'primeng/card'; */
 import { GalleryViewerComponent } from './component/GalleryPopup/gallery-viewer/gallery-viewer.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { StudentDetailsComponent } from './component/mainContent/student/student-details/student-details.component';
@@ -31,8 +31,8 @@ import { GrievanceComponent } from './component/mainContent/grievance/grievance.
 import { AddComponent } from './component/mainContent/grievance/add/add.component';
 import { LoginComponent } from './component/mainContent/grievance/login/login.component';
 import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
-import { FormsModule } from '../../node_modules/@angular/forms';
-import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -67,8 +67,6 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ButtonModule,
-    GalleriaModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -79,7 +77,6 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     MatCardModule,
     MatMenuModule,
     AppRoutingModule,
-    CardModule,
     MatTabsModule
   ],
   providers: [],
