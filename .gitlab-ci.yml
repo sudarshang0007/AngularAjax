@@ -1,0 +1,37 @@
+image: sudarshang0007/ubuntu-ncftp:1.0.0
+variables:
+  FF_USE_FASTZIP: "true"
+
+cache:
+  untracked: true
+  policy: push
+  key: ${CI_COMMIT_SHORT_SHA}
+  paths:
+    - node_modules/
+
+.pull_cached_node_modules:
+  cache:
+    untracked: true
+    key: ${CI_COMMIT_SHORT_SHA}
+    policy: pull
+
+stages:
+#  - setup
+  - test
+
+#install:
+#  stage: setup
+#  script:
+#    - npm ci
+
+test:
+  stage: test
+  extends: .pull_cached_node_modules
+  before_script:
+    - npm install
+    - npm run build --prod
+    - chmod -R 755 ./dist
+  script:
+    - echo "Deploy build to Server"
+    - ncftpput -R -v -u u421383828.dpharm -p P@ssw0rd dpharmakluj.org / dist/*
+    #- source ./script/ftp.sh
