@@ -29,5 +29,5 @@ test:
     - chmod -R 755 ./dist
   script:
     - echo "Deploy build to Server"
-    - ncftpput -R -v -u u421383828.dpharm -p P@ssw0rd dpharmakluj.org / dist/*
+    - ncftpput -R -v -u $FTP_USERNAME -p $FTP_PASSWORD dpharmakluj.org / dist/*
     #- source ./script/ftp.sh
