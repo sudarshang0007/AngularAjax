@@ -5,7 +5,14 @@ import { NgModule } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria'; */
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { AppDashboardComponent } from './component/app-dashboard/app-dashboard.component';
 import { MyNavComponent } from './component/my-nav/my-nav.component';
 import { AboutusComponent } from './component/mainContent/aboutus/aboutus.component';
