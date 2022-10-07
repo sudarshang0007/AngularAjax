@@ -24,7 +24,8 @@ test:
   stage: test
   extends: .pull_cached_node_modules
   before_script:
-    - npm install
+
+    - npm install --save --legacy-peer-deps
     - npm run build --prod
     - chmod -R 755 ./dist
   script:
